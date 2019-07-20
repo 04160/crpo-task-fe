@@ -17,6 +17,7 @@
                 <v-btn color="primary">Login</v-btn>
               </v-card-actions>
             </v-card>
+              <Footer></Footer>
           </v-flex>
         </v-layout>
       </v-container>
@@ -26,11 +27,13 @@
 
 <script>
 import Toolbar from './components/Toolbar.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    Toolbar
+    Toolbar,
+    Footer
   },
   data () {
     return {
