@@ -1,33 +1,39 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-toolbar>
-
+  <v-app id="inspire">
     <v-content>
-      <HelloWorld/>
+      <v-container fluid fill-height>
+        <v-layout align-center justify-center>
+          <v-flex xs12 sm10 md6>
+            <v-card class="elevation-12">
+              <v-toolbar dark color="primary">
+                <v-toolbar-title>Logo</v-toolbar-title>
+                <v-spacer></v-spacer>
+                <span>
+                  Links
+                </span>
+              </v-toolbar>
+              <v-card-text>
+                <v-form>
+                  <!-- <v-text-field prepend-icon="person" name="login" label="Login" type="text"></v-text-field>
+                  <v-text-field id="password" prepend-icon="lock" name="password" label="Password" type="password"></v-text-field> -->
+                </v-form>
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary">Login</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
 export default {
   name: 'App',
   components: {
-    HelloWorld
   },
   data () {
     return {
