@@ -2,16 +2,10 @@
   <v-app id="inspire">
     <v-content>
       <v-container fluid fill-height>
-        <v-layout align-center justify-center>
+        <v-layout justify-center>
           <v-flex xs12 sm10 md6>
             <v-card class="elevation-12">
-              <v-toolbar dark color="primary">
-                <v-toolbar-title>Logo</v-toolbar-title>
-                <v-spacer></v-spacer>
-                <span>
-                  Links
-                </span>
-              </v-toolbar>
+              <Toolbar></Toolbar>
               <v-card-text>
                 <v-form>
                   <!-- <v-text-field prepend-icon="person" name="login" label="Login" type="text"></v-text-field>
@@ -31,9 +25,12 @@
 </template>
 
 <script>
+import Toolbar from './components/Toolbar.vue';
+
 export default {
   name: 'App',
   components: {
+    Toolbar
   },
   data () {
     return {
