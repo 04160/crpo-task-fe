@@ -1,0 +1,41 @@
+<template>
+    <v-form>
+        <span>Email</span>
+        <v-text-field
+          v-model="email"
+          :rules="emailRules"
+          required="">
+        </v-text-field>
+        <span>Mobile</span>
+        <v-select
+            :items="items"
+            label="Standard"
+          ></v-select>
+        <v-text-field
+          v-model="Mobile"
+          :rules="mobileRules"
+          required="">
+        </v-text-field>
+        <span>Category</span>
+        <v-text-field
+          v-model="email"
+          :rules="emailRules"
+          required="">
+        </v-text-field>
+        <span>Password</span>
+        <v-text-field
+          v-model="email"
+          :rules="emailRules"
+          required="">
+        </v-text-field>
+        <v-checkbox>
+        </v-checkbox>
+            <v-formspan>
+                Agree to terms and conditions
+            </v-formspan>
+        <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="primary">Login</v-btn>
+        </v-card-actions>
+    </v-form>
+</template>
